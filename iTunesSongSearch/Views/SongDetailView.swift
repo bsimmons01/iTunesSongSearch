@@ -79,6 +79,10 @@ struct SongDetailView: View {
     }
     .navigationTitle("Song Details")
     .navigationBarTitleDisplayMode(.inline)
+    .onDisappear {
+      audioPlayer?.pause()
+      isPlaying = false
+    }
   }
 
   private func togglePlayback() {
