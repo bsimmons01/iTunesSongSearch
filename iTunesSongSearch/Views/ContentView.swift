@@ -39,7 +39,9 @@ struct ContentView: View {
             .padding()
         } else {
           List(viewModel.songs) { song in
-            SongRow(song: song)
+            NavigationLink(destination: SongDetailView(song: song)) {
+              SongRow(song: song)
+            }
           }
           .listStyle(.plain)
           .background(Color(.systemBackground)) // Matches light/dark mode
