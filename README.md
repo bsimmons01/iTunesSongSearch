@@ -24,9 +24,7 @@ A lightweight SwiftUI app that searches the iTunes API for songs by artist name 
 
 | Search View | Song Detail |
 |-------------|-------------|
-| <img width="1206" height="2622" alt="SongList" src="https://github.com/user-attachments/assets/7686bb8c-818f-43ff-91ba-d769bc2cddd5" />
- | <img width="1206" height="2622" alt="SongDetail" src="https://github.com/user-attachments/assets/82b6d588-f54e-4a18-9fff-10c3afc5ed5d" />
- |
+| <img border="1" width="302" height="656" alt="SongList" src="https://github.com/user-attachments/assets/7686bb8c-818f-43ff-91ba-d769bc2cddd5" /> | <img border="1" width="302" height="656" alt="SongDetail" src="https://github.com/user-attachments/assets/82b6d588-f54e-4a18-9fff-10c3afc5ed5d" />|
 
 ## 📦 API Used
 
