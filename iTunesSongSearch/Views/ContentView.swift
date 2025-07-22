@@ -19,6 +19,7 @@ struct ContentView: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .autocorrectionDisabled()
             .autocapitalization(.none)
+            .accessibilityIdentifier("SearchTextField")
 
           Button("Search") {
             Task {
@@ -26,6 +27,7 @@ struct ContentView: View {
             }
           }
           .disabled(searchTerm.trimmingCharacters(in: .whitespaces).count < 3)
+          .accessibilityIdentifier("SearchButton")
         }
         .padding([.horizontal, .top])
 
