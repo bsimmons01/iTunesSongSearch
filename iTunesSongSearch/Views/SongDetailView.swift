@@ -34,6 +34,8 @@ struct SongDetailView: View {
             }
           }
           .frame(maxWidth: 200)
+          .clipShape(RoundedRectangle(cornerRadius: 8))
+          .shadow(radius: 7)
         }
 
         Text(song.trackName ?? "Unknown Title")

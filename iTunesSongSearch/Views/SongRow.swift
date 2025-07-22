@@ -31,6 +31,8 @@ struct SongRow: View {
           EmptyView()
         }
       }
+      .clipShape(RoundedRectangle(cornerRadius: 8))
+      .shadow(radius: 7)
 
       VStack(alignment: .leading, spacing: 4) {
         Text(song.trackName ?? "Unknown Track")
@@ -63,8 +65,8 @@ struct SongRow: View {
     trackName: "Island in the Sun",
     artistName: "Weezer",
     collectionName: "Weezer (Green Album)",
-    artworkUrl100: URL(string: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4c/f2/2f/4cf22f8f-fbfd-59f7-b4f7-1b3d5d8845a0/source/100x100bb.jpg"),
-    previewUrl: nil,
+    artworkUrl100: URL(string: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/16/da/d016da24-577e-b584-3a5a-116efb5ca362/16UMGIM52971.rgb.jpg/100x100bb.jpg"),
+    previewUrl: URL(string:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/11/23/6f/11236f0d-9b5a-b780-5ebb-56c1dc512e3a/mzaf_11156035496161349512.plus.aac.p.m4a"),
     releaseDate: "2001-05-15T12:00:00Z",
     primaryGenreName: "Alternative"
   )
