@@ -83,6 +83,9 @@ struct SongDetailView: View {
       audioPlayer?.pause()
       isPlaying = false
     }
+    .onAppear {
+      print("song.previewUrl: \(song.previewUrl!)")
+    }
   }
 
   private func togglePlayback() {
